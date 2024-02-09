@@ -1,0 +1,16 @@
+﻿@model MySpotify.BLL.DTO.GenreDTO
+
+
+<div class="row">
+    <div>
+        <form asp-action="DeleteGenre">
+            <h4>Удаление</h4>
+            <hr />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div >
+                <h5>Вы действительно хотите удалить этот жанр? </h5>
+            </div>
+        </form>
+    </div>
+</div>
